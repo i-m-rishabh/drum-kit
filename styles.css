@@ -30,7 +30,7 @@ img{
     height: 80%;
     vertical-align: middle;
     width: 100%;
-    
+    position: relative;
     
 }
 span{

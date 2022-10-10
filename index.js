@@ -66,13 +66,13 @@ function keyPress(x){
     document.querySelector(x).style.border = "5px solid blue";
 }
 function keyDown(){
-    document.querySelectorAll("button")[0].style.border = "5px solid green";
-    document.querySelectorAll("button")[1].style.border = "5px solid green";    
-    document.querySelectorAll("button")[2].style.border = "5px solid green";   
-    document.querySelectorAll("button")[3].style.border = "5px solid green";
-    document.querySelectorAll("button")[4].style.border = "5px solid green";
-    document.querySelectorAll("button")[5].style.border = "5px solid green";
-    document.querySelectorAll("button")[6].style.border = "5px solid green";
+    document.querySelectorAll("button")[0].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+    document.querySelectorAll("button")[1].style.border = "5px solid rgba(26, 109, 91, 0.991)";    
+    document.querySelectorAll("button")[2].style.border = "5px solid rgba(26, 109, 91, 0.991)";   
+    document.querySelectorAll("button")[3].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+    document.querySelectorAll("button")[4].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+    document.querySelectorAll("button")[5].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+    document.querySelectorAll("button")[6].style.border = "5px solid rgba(26, 109, 91, 0.991)";
 
 
 

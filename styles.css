@@ -9,7 +9,7 @@ h1{
     color: brown;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-button{
+.drum{
     height: 120px;
     width: 120px;
     border: 5px solid rgba(26, 109, 91, 0.991);
@@ -31,8 +31,5 @@ img{
     vertical-align: middle;
     width: 100%;
     position: relative;
-    
-}
-span{
     
 }

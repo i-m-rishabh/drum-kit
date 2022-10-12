@@ -66,25 +66,31 @@ document.addEventListener('keydown', (event) => {
     var name = event.key;
     var code = event.code;
     // Alert the key name and key code on keydown
-    keyDown();
-  }, false);
-function keyPress(x){
-    document.querySelector(x).style.border = "5px solid blue";
-}
-function keyDown(){
+    // keyDown();.................insted ..added keydown function below.
     var n = document.querySelectorAll(".drum").length;
     for (let index = 0; index < n; index++) {
       document.querySelectorAll(".drum")[index].style.border = "5px solid rgba(26, 109, 91, 0.991)";
       
     }
-    // document.querySelectorAll("button")[0].style.border = "5px solid rgba(26, 109, 91, 0.991)";
-    // document.querySelectorAll("button")[1].style.border = "5px solid rgba(26, 109, 91, 0.991)";    
-    // document.querySelectorAll("button")[2].style.border = "5px solid rgba(26, 109, 91, 0.991)";   
-    // document.querySelectorAll("button")[3].style.border = "5px solid rgba(26, 109, 91, 0.991)";
-    // document.querySelectorAll("button")[4].style.border = "5px solid rgba(26, 109, 91, 0.991)";
-    // document.querySelectorAll("button")[5].style.border = "5px solid rgba(26, 109, 91, 0.991)";
-    // document.querySelectorAll("button")[6].style.border = "5px solid rgba(26, 109, 91, 0.991)";
-
-
-
+    
+  }, false);
+function keyPress(x){
+    document.querySelector(x).style.border = "5px solid blue";
 }
+// function keyDown(){
+//     var n = document.querySelectorAll(".drum").length;
+//     for (let index = 0; index < n; index++) {
+//       document.querySelectorAll(".drum")[index].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+      
+//     }
+//     // document.querySelectorAll("button")[0].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+//     // document.querySelectorAll("button")[1].style.border = "5px solid rgba(26, 109, 91, 0.991)";    
+//     // document.querySelectorAll("button")[2].style.border = "5px solid rgba(26, 109, 91, 0.991)";   
+//     // document.querySelectorAll("button")[3].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+//     // document.querySelectorAll("button")[4].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+//     // document.querySelectorAll("button")[5].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+//     // document.querySelectorAll("button")[6].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+
+
+
+// }

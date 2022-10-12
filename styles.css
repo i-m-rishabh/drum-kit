@@ -16,7 +16,8 @@ h1{
     border-radius: 20%;
     margin: 10px 20px;
     font-size: 50px;
-    color: red;
+    font-weight: 500;
+    color: rgb(255, 58, 58);
 }
 footer{
     margin-top:10% ;

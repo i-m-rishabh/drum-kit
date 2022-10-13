@@ -1,3 +1,16 @@
+
+// function Drum(letter, sound){
+//   this.letter = letter;
+//   this.sound = sound;
+// }
+// w = new Drum('w',"sounds/crash.mp3");
+// a = new Drum('w',"sounds/kick-bass.mp3");
+// s = new Drum('w',"sounds/snare.mp3");
+// d = new Drum('w',"sounds/tom-1.mp3");
+// j = new Drum('w',"sounds/tom-2.mp3");
+// k = new Drum('w',"sounds/tom-3.mp3");
+// l = new Drum('w',"sounds/tom-4.mp3");
+
 function buttonClick ( x ){
     // Audio("").play();
     switch(x) {
@@ -59,7 +72,9 @@ document.addEventListener('keydown', (event) => {
     var name = event.key;
     // var code = event.code;
     // Alert the key name and key code on keydown
-    buttonClick(name);
+     buttonClick(name); 
+    // new Audio(w.sound).play();
+    // alert(k.sound);
   }, false);
 
   document.addEventListener('keyup', (event) => {
@@ -69,13 +84,14 @@ document.addEventListener('keydown', (event) => {
     // keyDown();.................insted ..added keydown function below.
     var n = document.querySelectorAll(".drum").length;
     for (let index = 0; index < n; index++) {
-      document.querySelectorAll(".drum")[index].style.border = "5px solid rgba(26, 109, 91, 0.991)";
-      
+      // document.querySelectorAll(".drum")[index].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+      document.querySelectorAll(".drum")[index].classList.remove("keypress");
     }
     
   }, false);
 function keyPress(x){
-    document.querySelector(x).style.border = "5px solid blue";
+    // document.querySelector(x).style.border = "5px solid blue";
+     document.querySelector(x).classList.add("keypress");
 }
 // function keyDown(){
 //     var n = document.querySelectorAll(".drum").length;
@@ -94,3 +110,15 @@ function keyPress(x){
 
 
 // }
+
+for (let i = 0; i< document.querySelectorAll(".drum").length; i++){
+  document.querySelectorAll(".drum")[i].addEventListener("click", function(event){
+    var key = document.querySelectorAll(".drum")[i].innerHTML;
+    buttonClick(key);
+    for (let index = 0; index < 7; index++) {
+      document.querySelectorAll(".drum")[index].style.border = "5px solid rgba(26, 109, 91, 0.991)";
+      
+    }
+  });
+}
+// alert(document.querySelectorAll(".drum")[0].innerHTML);
